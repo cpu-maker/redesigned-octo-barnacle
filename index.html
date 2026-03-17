@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D Dropper Game</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+    canvas { display: block; }
+    #restartBtn {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px 40px;
+      font-size: 30px;
+      display: none;
+      cursor: pointer;
+      background-color: #fff;
+      border: none;
+      border-radius: 10px;
+    }
+    #scoreDisplay {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+      font-size: 30px;
+      font-family: Arial;
+    }
+  </style>
+</head>
+<body>
+  <div id="scoreDisplay">Score: 0</div>
+  <button id="restartBtn">Restart</button>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
